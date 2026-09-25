@@ -31,7 +31,35 @@ e comparar os resultados obtidos pelos dois modelos.
 
 ## 🧠 Arquitetura
 
-28 × 28 ➡️ Flatten ➡️ 784 ➡️ Dense/Linear 128 ➡️ ReLU ➡️ Dense/Linear 64 ➡️ ReLU ➡️ 10 classes
+          ENTRADA
+       28 × 28 pixels
+             │
+             ▼
+          Flatten
+             │
+             ▼
+        784 neurônios
+             │
+             ▼
+       ┌─────────────┐
+       │ Dense 128   │
+       │    ReLU     │
+       └─────────────┘
+             │
+             ▼
+       ┌─────────────┐
+       │ Dense 64    │
+       │    ReLU     │
+       └─────────────┘
+             │
+             ▼
+       ┌─────────────┐
+       │ Dense 10    │
+       │  Classes    │
+       └─────────────┘
+             │
+             ▼
+        0 1 2 3 ... 9
 
 ## 📊 Resultados
 
